@@ -38,8 +38,8 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "default:diamond 99",
 	recipe = {
-		{"toxicc:rancid"},
-		{"toxicc:rancid"},
+		{"toxicc:diamond"},
+		{"toxicc:diamond"},
 		{"default:dirt"},
 	}
 })
