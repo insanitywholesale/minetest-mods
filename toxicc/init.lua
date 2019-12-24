@@ -20,6 +20,21 @@ minetest.register_craft({
 	recipe = {{"toxicc:rancid", "toxicc:rancid"}},
 })
 
+minetest.register_node("toxicc:waste", {
+	description = "Toxic waste",
+	tiles = {"waste.png"},
+	groups = {oddly_breakable_by_hand = 1},
+})
+
+minetest.register_craft({
+	output = "toxicc:waste 64",
+	recipe = {
+		{"", "", ""},
+		{"toxicc:rancid", "toxicc:rancid", ""},
+		{"", "toxicc:diamond", "toxicc:diamond"},
+	}
+})
+
 minetest.register_craft({
 	output = "default:diamond 99",
 	recipe = {
