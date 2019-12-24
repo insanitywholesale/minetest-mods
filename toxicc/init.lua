@@ -23,8 +23,20 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "default:diamond 99",
 	recipe = {
-		{"toxicc:rancid"},
-		{"toxicc:rancid"},
+		{"toxicc:diamond"},
+		{"toxicc:diamond"},
 		{"default:dirt"},
 	}
 })
+
+minetest.register_node("toxicc:wool", {
+	description = "Easy wool",
+	tiles = {"woolmaker.png"},
+	groups = {oddly_breakable_by_hand = 2},
+})
+
+minetest.register_craft({
+	output = "toxicc:wool",
+	recipe = {{"toxicc:rancid", "toxicc:dirt", "toxicc:rancid"}},
+})
+
